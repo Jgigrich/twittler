@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding 0;
+}
+
+body {
+  background-color: #ebeff2;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+/*********************  BANNER CONTAINER  ********************/
+
+#banner {
+  text-align: center;
+  min-height: 45px;
+  background-color: white;
+  border: 1px solid lightGrey;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+/*****  NAV  *******/
+
+nav {
+  display: inline-block;
+  text-align: left;
+  font-size: 0.82em;
+  margin-left: -20%;
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+}
+
+
+nav li {
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+nav i {
+  position: relative;
+  top: 5px;
+  color: #7e7e7e;
+  margin-right: 5px;
+  font-size: 2em;
+}
+
+nav a {
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+/*****  TWITTER ICON  *******/
+
+.twitterIcon {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #00aced;
+  font-size: 1.5em;
+}
+
+/*****  SEARCH  *******/
+
+.search {
+  display: inline-block;
+  text-align: left;
+  width: 200px;
+  height: 20px;
+  color: grey;
+  border-radius: 10px;
+  background-color: #f5f8fa;
+  padding: 5px;
+}
+
+.search p {
+  display: inline-block;
+}
+
+.search i {
+
+  margin-left: 80px;
+}
+
+@media (max-width: 1150px) {
+  nav {
+    margin-left: -10%;
+  }
+}
+
+/*****  BANNER MEDIA QUERIES  *******/
+
+@media (max-width: 850px) {
+  nav li {
+    display: block;
+  }
+  nav {
+    margin: auto;
+    text-align: center;
+  }
+  .twitterIcon {
+    display: block;
+    margin: auto;
+
+  }
+  .search {
+    margin: 10px auto;
+  }
+}
+
+/*********************  MAIN CONTAINER  ********************/
+
+#main {
+  position:relative;
+  width: 640px;
+  margin: auto;
+  text-align: left;
+}
+
+@media (max-width: 1200px) and (min-width: 930px) {
+  #main {
+    margin-left: 270px;
+  }
+}
+
+/*****  ADD TWEET TEXTAREA  *******/
+
+#inputNewTweet {
+  width: 600px;
+  margin: auto;
+  background-color: #daebeb;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#inputNewTweet textarea{
+  width: 500px;
+  height: 20px;
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #4f8b89;
+  padding: 8px;
+  font-size: 1.1em;
+  transition: height 0.5s;
+}
+
+#inputNewTweet textarea:focus {
+  height: 60px;
+}
+
+/*****  VIEW NEW TWEETS  *******/
+
+#newTweets {
+  width: 600px;
+  height: 30px;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding-top: 15px;
+  text-align: center;
+  color: #4f8b89
+}
+
+#newTweets:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+/*****  TWEETS LIST  ******/
+
+.tweetsContainer {
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  text-align: left;
+}
+
+.tweetDiv {
+  font-size: 0.9em;
+  padding: 5px 10px 5px 70px;
+  border: 1px solid lightGrey;
+}
+
+.tweetHeader {
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+  color: Grey;
+}
+
+.tweetHeader p {
+  display: inline-block;
+}
+
+.tweetHeader a {
+  color: black;
+  font-weight: bold;
+}
+
+.tweetFooter {
+  margin-top: 5px;
+  color: grey;
+}
+
+.footerIcons {
+  margin-right: 60px;
+  font-size: 1.5em;
+}
+
+/******  USER PANEL *****/
+
+#user {
+  position:absolute;
+  top:0px;
+  right:100%;
+  width:250px;
+  height:150px;
+  background:white;
+  padding:20px 5px;
+  text-align: center;
+  color: black;
+  font-size: 1.3em;
+}
+
+@media (max-width: 930px) {
+  #user {
+    position:static;
+    margin: 0px auto 10px auto;
+  }
+}
+
+#user h6 {
+  color: gray;
+  margin: 5px;
+}
+
+#user .motto {
+  color: black;
+  margin: 30px 20px;
+  font-size: 0.7em;
+  text-align: left;
+}
+
+.userStats {
+  display: inline-block;
+  margin: 0px 8px;
+  font-size: 0.7em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.userStatsTitle {
+  color: #818181;
+  font-size: 0.8em;
+}
+
+
+.userStatsValue {
+  color: #4f8b89;
+  font-size: 1.3em;
+}
+
